@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #root {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+    </style>
   </head>
   <body>
     <div id="root">
-      <div></div>
-      <input type="text" id="coordinateX" placeholder="x값" />
-      <input type="text" id="coordinateY" placeholder="Y값" />
-      <input type="button" id="xyCheck" title="클릭값" value="클릭" />
+      <div>
+        <input type="text" id="coordinateX" placeholder="x값" />
+        <input type="text" id="coordinateY" placeholder="Y값" />
+        <input type="button" id="xyCheck" title="클릭값" value="클릭" />
+      </div>
     </div>
   </body>
 </html>

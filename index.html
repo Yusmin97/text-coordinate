@@ -37,16 +37,14 @@
       // console.log(xText);
       // console.log(yText);
 
-      const airplane = document.createElement('img');
+      const airplanes = document.createElement('img');
+      airplanes.src = 'airplane.png';
 
       xybtn.addEventListener('click', (event) => {
-        console.log('click!');
-        console.log(event);
-
         let x = event.offsetX;
         let y = event.offsetY;
 
-        root.innerText = 'x좌표:' + x + 'y 좌표:' + y;
+        airplanes = root;
       });
     </script>
   </body>

@@ -13,6 +13,10 @@
       #root {
         width: 100vw;
         height: 100vh;
+        display: flex;
+        background-image: url(pngtree-blue-sky-and-white-clouds-pure-sky-image_786707.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
   </head>
@@ -25,7 +29,9 @@
       </div>
     </div>
     <script>
-      const movingBox = document.createElement('div');
+      const root = document.getElementById('root');
+
+      const airplane = document.createElement('img');
     </script>
   </body>
 </html>

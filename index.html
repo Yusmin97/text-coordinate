@@ -40,18 +40,18 @@
         let xText = document.getElementById('coordinateX');
         let yText = document.getElementById('coordinateY');
         console.log(event);
-        // let xTextValue = xText.value;
-        // let yTextValue = yText.value;
+        let xTextValue = xText.value;
+        let yTextValue = yText.value;
         // let xE = event.x;
         // let yE = event.y;
-        xText = event.x;
-        yText = event.y;
+        // xText = event.x;
+        // yText = event.y;
 
         let airplanes = document.createElement('img');
         airplanes.src = 'airplane.png';
         airplanes.style.cssText = 'width: 5vw; height: 5vw; position: absolute;';
-        airplanes.style.top = yText + 'px';
-        airplanes.style.left = xText + 'px';
+        airplanes.style.top = yTextValue + 'px';
+        airplanes.style.left = xTextValue + 'px';
         root.appendChild(airplanes);
 
         // let x = xText(event.offsetX);

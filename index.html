@@ -13,7 +13,7 @@
       #root {
         width: 100vw;
         height: 100vh;
-        display: flex;
+        /* display: flex; */
         /* background-image: url(pngtree-blue-sky-and-white-clouds-pure-sky-image_786707.jpg);
         background-repeat: no-repeat;
         background-size: cover; */
@@ -29,6 +29,7 @@
       </div>
     </div>
     <script>
+      let img = document.getElementsByTagName('img');
       const root = document.getElementById('root');
       const xybtn = document.getElementById('xyCheck');
 
@@ -38,19 +39,26 @@
       xybtn.addEventListener('click', (event) => {
         let xText = document.getElementById('coordinateX');
         let yText = document.getElementById('coordinateY');
+        console.log(event);
+        // let xTextValue = xText.value;
+        // let yTextValue = yText.value;
+        // let xE = event.x;
+        // let yE = event.y;
+        xText = event.x;
+        yText = event.y;
 
         let airplanes = document.createElement('img');
         airplanes.src = 'airplane.png';
         airplanes.style.cssText = 'width: 5vw; height: 5vw; position: absolute;';
-        airplanes.style.top = `${xText}`;
-        airplanes.style.left = `${yText}`;
-
+        airplanes.style.top = yText + 'px';
+        airplanes.style.left = xText + 'px';
         root.appendChild(airplanes);
 
         // let x = xText(event.offsetX);
         // let y = yText(event.offsetY);
 
         // root.innerText = 'x 좌표:' + x + 'y 좌표:' + y;
+        console.log(img);
       });
     </script>
   </body>

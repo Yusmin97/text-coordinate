@@ -32,13 +32,14 @@
       const root = document.getElementById('root');
       const xText = document.getElementById('coordinateX');
       const yText = document.getElementById('coordinateY');
+      const xybtn = document.getElementById('xyCheck');
 
       // console.log(xText);
       // console.log(yText);
 
       const airplane = document.createElement('img');
 
-      root.addEventListener('click', (event) => {
+      xybtn.addEventListener('click', (event) => {
         console.log('click!');
         console.log(event);
 

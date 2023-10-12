@@ -49,9 +49,14 @@
 
         let airplanes = document.createElement('img');
         airplanes.src = 'airplane.png';
-        airplanes.style.cssText = 'width: 5vw; height: 5vw; position: absolute;';
+        // airplanes.style.cssText = `'width: 5vw; height: 5vw; position: absolute; top: ${yTextValue} + px; left: ${xTextValue} + px;'`;
+        airplanes.style.width = '5vw';
+        airplanes.style.height = '5vw';
+        airplanes.style.position = 'absolute';
         airplanes.style.top = yTextValue + 'px';
         airplanes.style.left = xTextValue + 'px';
+        // airplanes.style.top = yTextValue + 'px';
+        // airplanes.style.left = xTextValue + 'px';
         root.appendChild(airplanes);
 
         // let x = xText(event.offsetX);
